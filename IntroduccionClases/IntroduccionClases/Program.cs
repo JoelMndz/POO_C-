@@ -2,7 +2,8 @@
 
 using IntroduccionClases;
 
-Persona vendedor = new Vendedor();
-vendedor.Sue
+Vendedor vendedor = new Vendedor();
+vendedor.Sueldo = 100;
+
 
 Console.WriteLine(vendedor.MostrarInformacion());
