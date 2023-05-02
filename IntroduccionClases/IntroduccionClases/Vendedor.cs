@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroduccionClases;
 
-public class Vendedor: Persona
+public class Vendedor: Empleado
 {
-    public double Sueldo { get; set; }
+
 }

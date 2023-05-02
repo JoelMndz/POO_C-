@@ -2,7 +2,7 @@
 
 using IntroduccionClases;
 
-Persona vendedor = new Gerente();
-
+Persona vendedor = new Vendedor();
+vendedor.Sue
 
 Console.WriteLine(vendedor.MostrarInformacion());

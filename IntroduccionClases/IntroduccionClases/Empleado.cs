@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroduccionClases;
 
-public class Gerente: Empleado
+public abstract class Empleado:Persona
 {
-
-
-    public void M()
-    {
-        this.Nombre = "";
-        this.Clave = "";
-    }
+    public double Sueldo { get; set; }
 }
