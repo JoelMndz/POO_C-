@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace IntroduccionClases;
 
-public class Vendedor: Empleado
+public class Vendedor : Empleado
 {
-
+    public override double CalcularSueldo()
+    {
+        return this.Sueldo + (HorasExtras * 4);
+    }
 }

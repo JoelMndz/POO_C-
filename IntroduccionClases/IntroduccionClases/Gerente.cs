@@ -8,7 +8,10 @@ namespace IntroduccionClases;
 
 public class Gerente: Empleado
 {
-
+    public override double CalcularSueldo()
+    {
+        return Sueldo + (HorasExtras * 20);
+    }
 
     public void M()
     {
