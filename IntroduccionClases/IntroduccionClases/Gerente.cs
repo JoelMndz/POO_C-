@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace IntroduccionClases;
 
-public class Gerente: Empleado
+public class Gerente: Empleado, IGenerarReporte
 {
     public override double CalcularSueldo()
     {
         return Sueldo + (HorasExtras * 20);
+    }
+
+    public void GenerarReporte()
+    {
+        Console.WriteLine("Generando reporte...");
     }
 
     public void M()

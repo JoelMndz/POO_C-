@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using IntroduccionClases;
-
+/*
 Vendedor vendedor = new Vendedor();
 vendedor.Sueldo = 500;
 vendedor.HorasExtras = 10;
@@ -15,4 +15,14 @@ empleados.Add(new Gerente() { Sueldo = 900, HorasExtras = 20});
 var total = empleados.Sum(x => x.CalcularSueldo());
 Console.WriteLine($"Total a pagar = {total}");
 
+IGenerarReporte trabajador = new Vendedor();
+trabajador.GenerarReporte();
 Console.WriteLine(vendedor.MostrarInformacion());
+*/
+
+//Inyeccion de dependencia
+IArchivo archivo = new ArchivoLocal();
+
+Api api = new(archivo);
+
+api.SubirImagen("base64:,wkeggUYGUGuygiugy");
