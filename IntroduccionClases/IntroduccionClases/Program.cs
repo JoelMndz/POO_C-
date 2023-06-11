@@ -57,6 +57,10 @@ do
     {
         Console.WriteLine("Debes ingresar solo números enteros");
     }
+    catch (Exception error)
+    {
+        Console.WriteLine(error.Message);
+    }
 
 } while (true);
 
