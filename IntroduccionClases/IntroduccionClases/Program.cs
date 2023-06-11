@@ -19,10 +19,54 @@ IGenerarReporte trabajador = new Vendedor();
 trabajador.GenerarReporte();
 Console.WriteLine(vendedor.MostrarInformacion());
 */
-
+/*
 //Inyeccion de dependencia
 IArchivo archivo = new ArchivoLocal();
 
 Api api = new(archivo);
 
-api.SubirImagen("base64:,wkeggUYGUGuygiugy");
+api.SubirImagen("base64:,wkeggUYGUGuygiugy");*/
+
+int divisor, dividendo;
+float resultado;
+
+do
+{
+    try
+    {
+        Console.WriteLine("Ingresa el dividendo: ");
+        dividendo = int.Parse(Console.ReadLine());
+        break;
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Debes ingresar solo números enteros");
+    }
+    
+} while (true);
+
+do
+{
+    try
+    {
+        Console.WriteLine("Ingrese el divisor: ");
+        divisor = int.Parse(Console.ReadLine());
+        break;
+    }
+    catch (FormatException)
+    {
+        Console.WriteLine("Debes ingresar solo números enteros");
+    }
+
+} while (true);
+
+
+try 
+{    
+    resultado = dividendo / divisor;
+    Console.WriteLine("Resultado ->" + resultado);
+}
+catch (DivideByZeroException error)
+{
+    Console.WriteLine("NO puedes dividir para 0");
+}
