@@ -81,7 +81,6 @@ string base64 = "";
 try
 {
     googleStorage.SubirArchivo(base64);
-
 }
 catch (Exception error)
 {
