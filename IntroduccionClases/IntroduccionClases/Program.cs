@@ -26,7 +26,7 @@ IArchivo archivo = new ArchivoLocal();
 Api api = new(archivo);
 
 api.SubirImagen("base64:,wkeggUYGUGuygiugy");*/
-
+/*
 int divisor, dividendo;
 float resultado;
 
@@ -73,4 +73,17 @@ try
 catch (DivideByZeroException error)
 {
     Console.WriteLine("NO puedes dividir para 0");
+}*/
+
+IArchivo googleStorage = new GoogleStorage();
+string base64 = "";
+
+try
+{
+    googleStorage.SubirArchivo(base64);
+
+}
+catch (Exception error)
+{
+    Console.WriteLine(error.Message);
 }
